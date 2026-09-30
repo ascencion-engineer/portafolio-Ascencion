@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- =========================================================
+       METADATOS Y SEO BÁSICO
+       Edita title, description, URL y la imagen para redes (og:image).
+       ========================================================= -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Ascención Linares | Ingeniero en Sistemas · Desarrollo web y apps</title>
+  <meta name="description" content="Ascención Linares, ingeniero en sistemas. Desarrollo páginas web en WordPress y Shopify, aplicaciones Android y sistemas administrativos a medida con Java, PHP, MySQL, Supabase y Firebase.">
+  <meta name="keywords" content="desarrollador web, páginas web, WordPress, Shopify, aplicaciones Android, Java, PHP, MySQL, Supabase, Firebase, sistemas administrativos, México">
+  <meta name="author" content="Ascención Linares">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#070D1A">
+  <meta name="color-scheme" content="dark">
+  <!-- Cambia por la URL real cuando publiques el sitio -->
+  <link rel="canonical" href="https://tudominio.com/">
+
+  <!-- Open Graph (vista previa en WhatsApp, Facebook, LinkedIn) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ascención Linares | Desarrollo web y apps">
+  <meta property="og:description" content="Páginas web, tiendas en línea y aplicaciones hechas con código propio.">
+  <meta property="og:url" content="https://tudominio.com/">
+  <meta property="og:image" content="https://tudominio.com/img/og-portada.jpg">
+  <meta property="og:locale" content="es_MX">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Datos estructurados: ayudan a Google a entender quién eres -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ascención Linares",
+    "jobTitle": "Ingeniero en Sistemas · Desarrollador web y de aplicaciones",
+    "url": "https://tudominio.com/",
+    "knowsAbout": ["HTML", "CSS", "SCSS", "JavaScript", "Java", "PHP", "MySQL", "WordPress", "Shopify", "Firebase", "Supabase", "Android"]
+  }
+  </script>
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💼</text></svg>">
+
+  <!-- Tipografías: Instrument Sans (texto) + Instrument Serif (nombre y títulos) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+
+  <!-- Estilos del sitio -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <!-- Barra de progreso de scroll -->
+  <div class="progress" aria-hidden="true"></div>
+
+  <!-- =========================================================
+       NAVEGACIÓN
+       ========================================================= -->
+  <header class="nav" id="nav">
+    <nav class="container nav-inner" aria-label="Principal">
+      <a href="#inicio" class="logo" aria-label="Ir al inicio">A<span>.</span>L</a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Abrir menú">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- =========================================================
+         1. INICIO
+         ========================================================= -->
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div id="particles" aria-hidden="true"></div>
+
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="hero-role" data-hero>Ingeniero en Sistemas · Desarrollador web y de apps</p>
+          <h1 class="hero-name" id="hero-title">
+            <span class="line"><span data-hero-line>Ascención</span></span>
+            <span class="line"><span data-hero-line>Linares</span></span>
+          </h1>
+          <p class="hero-lead" data-hero>
+            Construyo páginas web, tiendas en línea y aplicaciones con código propio:
+            rápidas, seguras y pensadas para que tu negocio las pueda usar desde el primer día.
+          </p>
+          <div class="hero-actions" data-hero>
+            <a href="#proyectos" class="btn btn-gold"><i class="fa-solid fa-layer-group"></i> Ver proyectos</a>
+            <a href="#contacto" class="btn btn-ghost">Hablemos de tu proyecto</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" data-hero-visual>
+          <div class="avatar-wrap">
+            <div class="avatar-orbit" id="orbit"></div>
+            <div class="avatar">
+              <!-- Para usar tu foto, guárdala en la carpeta img/ y reemplaza la línea de abajo por:
+                   <img src="img/ascencion.jpg" alt="Ascención Linares" width="400" height="400"> -->
+              <img src="img/foto-perfil.jpeg" alt="Ascencion Linares" width="400" height="400">
+            </div>
+            <span class="status-chip">Disponible para proyectos</span>
+          </div>
+        </div>
+      </div>
+
+      <a href="#sobre-mi" class="scroll-hint" aria-label="Bajar a Sobre mí">
+        Desliza <i class="fa-solid fa-chevron-down"></i>
+      </a>
+    </section>
+
+    <!-- =========================================================
+         2. SOBRE MÍ
+         ========================================================= -->
+    <section class="section" id="sobre-mi" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div class="about-text reveal">
+          <h2 class="section-title" id="about-title">Sobre mí</h2>
+          <p>
+            Soy <strong>ingeniero en sistemas</strong> y me dedico a convertir ideas de negocio en
+            productos digitales que funcionan: sitios que cargan rápido, tiendas que venden y
+            aplicaciones que la gente entiende sin manual.
+          </p>
+          <p>
+            Trabajo con negocios locales y emprendedores que necesitan presencia profesional en
+            internet, y también desarrollo aplicaciones Android y sistemas a medida cuando una
+            plantilla no alcanza. Me importa la seguridad de los datos, el rendimiento y que el
+            cliente entienda lo que está recibiendo.
+          </p>
+          <!-- Edita estos párrafos con tu experiencia real (años, clientes, estudios). -->
+        </div>
+
+        <ul class="focus-list reveal">
+          <li>
+            <span class="fi"><i class="fa-solid fa-display"></i></span>
+            <div>
+              <h3>Páginas web</h3>
+              <p>WordPress para sitios informativos y código a medida con HTML, CSS y JavaScript.</p>
+            </div>
+          </li>
+          <li>
+            <span class="fi"><i class="fa-solid fa-bag-shopping"></i></span>
+            <div>
+              <h3>Tiendas en línea</h3>
+              <p>Tiendas en Shopify listas para vender, con pagos, envíos y catálogo configurados.</p>
+            </div>
+          </li>
+          <li>
+            <span class="fi"><i class="fa-solid fa-mobile-screen"></i></span>
+            <div>
+              <h3>Aplicaciones</h3>
+              <p>Apps Android con Jetpack Compose, video en tiempo real y backend en Supabase o Firebase.</p>
+            </div>
+          </li>
+          <li>
+            <span class="fi"><i class="fa-solid fa-cash-register"></i></span>
+            <div>
+              <h3>Sistemas administrativos</h3>
+              <p>Control de pagos, inscripciones, ventas y reportes, con la información protegida y privada.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         3. HABILIDADES
+         Para agregar una tecnología, copia un bloque <div class="skill">.
+         Íconos: https://fontawesome.com/icons (versión gratuita)
+         ========================================================= -->
+    <section class="section" id="habilidades" aria-labelledby="skills-title">
+      <div class="container">
+        <h2 class="section-title reveal" id="skills-title">Habilidades</h2>
+        <p class="section-intro reveal">Las herramientas con las que trabajo a diario, agrupadas por la parte del proyecto en la que las uso.</p>
+
+        <div class="skills-groups">
+          <div class="skills-group">
+            <h3>Lenguajes</h3>
+            <div class="skills-row">
+              <div class="skill"><i class="skill-icon fa-brands fa-html5"></i><span>HTML5</span></div>
+              <div class="skill"><i class="skill-icon fa-brands fa-css3-alt"></i><span>CSS3</span></div>
+              <div class="skill"><i class="skill-icon fa-brands fa-sass"></i><span>SCSS</span></div>
+              <div class="skill"><i class="skill-icon fa-brands fa-js"></i><span>JavaScript</span></div>
+              <div class="skill"><i class="skill-icon fa-brands fa-java"></i><span>Java</span></div>
+              <div class="skill"><i class="skill-icon fa-brands fa-php"></i><span>PHP</span></div>
+            </div>
+          </div>
+
+          <div class="skills-group">
+            <h3>Bases de datos y servicios</h3>
+            <div class="skills-row">
+              <div class="skill"><i class="skill-icon fa-solid fa-database"></i><span>MySQL</span></div>
+              <div class="skill"><i class="skill-icon fa-solid fa-bolt"></i><span>Supabase</span></div>
+              <div class="skill"><i class="skill-icon fa-solid fa-fire-flame-curved"></i><span>Firebase</span></div>
+              <div class="skill"><i class="skill-icon fa-solid fa-video"></i><span>Agora (video en vivo)</span></div>
+            </div>
+          </div>
+
+          <div class="skills-group">
+            <h3>Plataformas y comercio</h3>
+            <div class="skills-row">
+              <div class="skill"><i class="skill-icon fa-brands fa-wordpress"></i><span>WordPress</span></div>
+              <div class="skill"><i class="skill-icon fa-brands fa-shopify"></i><span>Shopify</span></div>
+            </div>
+          </div>
+
+          <div class="skills-group">
+            <h3>Herramientas de trabajo</h3>
+            <div class="skills-row">
+              <div class="skill"><i class="skill-icon fa-brands fa-android"></i><span>Android Studio</span></div>
+              <div class="skill"><i class="skill-icon fa-solid fa-code"></i><span>VS Code · IntelliJ</span></div>
+              <div class="skill"><i class="skill-icon fa-brands fa-github"></i><span>Git y GitHub</span></div>
+              <div class="skill"><i class="skill-icon fa-brands fa-figma"></i><span>Figma</span></div>
+            </div>
+          </div>
+        </div>
+
+        <p class="skills-note reveal">
+          También trabajo con <strong>asistentes de IA</strong> como Claude Code y GitHub Copilot
+          para acelerar el desarrollo y revisar el código, lo que me permite entregar más rápido
+          sin descuidar la calidad.
+        </p>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         4. PROYECTOS
+         Cada <article class="project"> es una tarjeta.
+         Cambia los "#" por tus enlaces reales de GitHub o demo.
+         ========================================================= -->
+    <section class="section" id="proyectos" aria-labelledby="projects-title">
+      <div class="container">
+        <h2 class="section-title reveal" id="projects-title">Proyectos</h2>
+        <p class="section-intro reveal">Sistemas administrativos, aplicaciones y sitios web. Algunos proyectos manejan información privada, por eso solo muestro una descripción general.</p>
+
+        <div class="projects-grid">
+          <!-- Proyecto destacado: sistema universitario (confidencial) -->
+          <article class="project project--featured">
+            <div class="project-media">
+              <!-- Imagen del proyecto: cámbiala en img/sistema-universitario.webp -->
+              <img src="img/sistema-universitario.webp" alt="Panel del sistema de gestión financiera universitaria en laptop y celular" width="1400" height="933" loading="lazy" decoding="async">
+            </div>
+            <div class="project-body">
+              <span class="project-state"><i class="fa-solid fa-lock"></i> Proyecto privado · entregado</span>
+              <h3>Sistema de gestión financiera universitaria</h3>
+              <p>
+                Sistema para administrar la parte económica de una universidad: registro de pagos,
+                control de inscripciones y generación de reportes. Al manejar información
+                confidencial de alumnos, el acceso es privado y los datos están protegidos.
+              </p>
+              <ul class="tags"><li>Java</li><li>MySQL</li><li>NetBeans</li></ul>
+              <div class="project-links">
+                <a href="#contacto"><i class="fa-solid fa-comments"></i> Pedir más detalles</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- App en desarrollo (confidencial) -->
+          <article class="project">
+            <div class="project-media">
+              <!-- Imagen del proyecto: cámbiala en img/app-videollamadas.webp -->
+              <img src="img/app-videollamadas.webp" alt="Pantallas de la app de videollamadas en tres celulares" width="1400" height="933" loading="lazy" decoding="async">
+            </div>
+            <div class="project-body">
+              <span class="project-state"><i class="fa-solid fa-lock"></i> Confidencial · en desarrollo</span>
+              <h3>App de videollamadas</h3>
+              <p>App Android de comunicación en tiempo real, con registro seguro, verificación de edad y animaciones interactivas. Los detalles se comparten solo en una reunión.</p>
+              <ul class="tags"><li>Jetpack Compose</li><li>Supabase</li><li>Agora</li></ul>
+              <div class="project-links">
+                <a href="#contacto"><i class="fa-solid fa-comments"></i> Pedir más detalles</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Sitio de servicios -->
+          <article class="project">
+            <div class="project-media">
+              <!-- Imagen del proyecto: cámbiala en img/paginas-web-express.webp -->
+              <img src="img/paginas-web-express.webp" alt="Sitio de Páginas Web Express en laptop y celular" width="1400" height="933" loading="lazy" decoding="async">
+            </div>
+            <div class="project-body">
+              <span class="project-state">En línea</span>
+              <h3>Páginas Web Express</h3>
+              <p>Sitio de mi servicio de creación de páginas web: presenta los paquetes, muestra el trabajo y permite que los clientes me contacten directo.</p>
+              <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Animaciones</li></ul>
+              <div class="project-links">
+                <a href="#" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Ver sitio</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Tiendas Shopify -->
+          <article class="project">
+            <div class="project-media">
+              <!-- Imagen del proyecto: cámbiala en img/tienda-shopify.webp -->
+              <img src="img/tienda-shopify.webp" alt="Tienda en línea en laptop y celular" width="1400" height="933" loading="lazy" decoding="async">
+            </div>
+            <div class="project-body">
+              <span class="project-state">Comercio electrónico</span>
+              <h3>Tiendas en Shopify</h3>
+              <p>Tiendas en línea listas para vender: catálogo de productos, pagos, envíos y diseño adaptado a la marca de cada cliente.</p>
+              <ul class="tags"><li>Shopify</li><li>Liquid</li><li>CSS</li></ul>
+              <div class="project-links">
+                <!-- Pon aquí el enlace a una tienda que hayas hecho -->
+                <a href="#" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Ver tienda</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Punto de venta -->
+          <article class="project">
+            <div class="project-media">
+              <!-- Imagen del proyecto: cámbiala en img/punto-de-venta.webp -->
+              <img src="img/punto-de-venta.webp" alt="Sistema de punto de venta en monitor, celular e impresora de tickets" width="1400" height="933" loading="lazy" decoding="async">
+            </div>
+            <div class="project-body">
+              <span class="project-state">Sistema de escritorio</span>
+              <h3>Punto de venta</h3>
+              <p>Sistema de ventas para comercio: registro de productos, cobro rápido y control de lo vendido en el día.</p>
+              <!-- Confirma las tecnologías reales que usaste -->
+              <ul class="tags"><li>Java</li><li>MySQL</li></ul>
+            </div>
+          </article>
+
+          <!-- Cierre: invita a contactar -->
+          <article class="project project--cta">
+            <div class="project-body">
+              <h3>¿Tu proyecto es el siguiente?</h3>
+              <p>Si necesitas un sitio, una tienda o un sistema para tu negocio, cuéntame qué tienes en mente.</p>
+              <div class="project-links">
+                <a href="#contacto" class="btn btn-gold"><i class="fa-solid fa-paper-plane"></i> Cotizar proyecto</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         5. CONTACTO
+         El formulario funciona de dos formas (ver CONFIG en el JS):
+         - Con Formspree: envía el mensaje a tu correo.
+         - Sin Formspree: abre WhatsApp con el mensaje ya escrito.
+         ========================================================= -->
+    <section class="section" id="contacto" aria-labelledby="contact-title">
+      <div class="container contact-grid">
+        <div class="contact-aside reveal">
+          <h2 class="section-title" id="contact-title">Hablemos de tu proyecto</h2>
+          <p>Cuéntame qué necesitas y te respondo con una propuesta clara: alcance, tiempos y costo.</p>
+          <a href="#" class="btn btn-whatsapp" data-whatsapp><i class="fa-brands fa-whatsapp"></i> Escribir por WhatsApp</a>
+          <ul class="contact-lines">
+            <li><span class="fi"><i class="fa-solid fa-envelope"></i></span><a href="mailto:contacto@tudominio.com" data-email>contacto@tudominio.com</a></li>
+            <li><span class="fi"><i class="fa-solid fa-location-dot"></i></span>México · trabajo a distancia</li>
+          </ul>
+        </div>
+
+        <form class="form reveal" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="field">
+              <label for="name">Nombre</label>
+              <input id="name" name="nombre" type="text" autocomplete="name" required>
+              <span class="field-error" aria-live="polite"></span>
+            </div>
+            <div class="field">
+              <label for="email">Correo</label>
+              <input id="email" name="correo" type="email" autocomplete="email" required>
+              <span class="field-error" aria-live="polite"></span>
+            </div>
+          </div>
+          <div class="field">
+            <label for="message">¿Qué necesitas?</label>
+            <textarea id="message" name="mensaje" required placeholder="Ej. una tienda en línea para vender ropa, con pagos con tarjeta"></textarea>
+            <span class="field-error" aria-live="polite"></span>
+          </div>
+          <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <button type="submit" class="btn btn-gold" id="submitBtn"><i class="fa-solid fa-paper-plane"></i> Enviar mensaje</button>
+          <p class="form-status" id="formStatus" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================
+       6. FOOTER
+       ========================================================= -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <small>© <span id="year"></span> Ascención Linares. Todos los derechos reservados.</small>
+      <!-- Cambia los "#" por tus perfiles -->
+      <ul class="socials">
+        <li><a href="https://github.com/ascencion-engineer" aria-label="GitHub" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/ascencion-linares" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a></li>
+        
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Botón flotante de WhatsApp -->
+  <a href="#" class="wa-float" data-whatsapp aria-label="Escribir por WhatsApp" target="_blank" rel="noopener">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- =========================================================
+       LIBRERÍAS (cargadas al final para no bloquear la página)
+       ========================================================= -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js" defer></script>
+
+  <!-- Código propio del sitio (se ejecuta después de las librerías) -->
+  <script src="js/main.js" defer></script>
+</body>
+</html>
